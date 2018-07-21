@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE>Initialisation</TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#ADD8E6;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h1>Initialising an Array</h1></center>
+</div>
+<center>
+<div class="border_box">
+You can initialize array in C either one by one or using a single statement as follows:<br>
+
+double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};<br>
+The number of values between braces { } can not be larger than the number of elements that we declare for the array between square brackets [ ].<br>
+
+If you omit the size of the array, an array just big enough to hold the initialization is created. Therefore, if you write:<br>
+
+double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};<br>
+You will create exactly the same array as you did in the previous example. Following is an example to assign a single element of the array:
+
+balance[4] = 50.0;<br>
+<p>The above statement assigns element number 5th in the array with a value of 50.0. All arrays have 0 as the index of their first element which is also called base index and last index of an array will be total size of the array minus 1. <p>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

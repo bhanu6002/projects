@@ -1,0 +1,115 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#4682B4;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h3>/*Stack to Push, Pop, and Display elements*/</h3></center>
+</div>
+<center>
+<div class="border_box">
+#include< stdio.h ><br>
+#include< conio.h ><br>
+#include< stdlib.h ><br>
+#define MAXSIZE 5<br>
+void push();<br>
+int pop();<br>
+void display();<br>
+int stack[MAXSIZE];<br>
+int top=-1;<br>
+void main()<br>
+ {<br>
+  int choice;<br>
+  char c;<br>
+  clrscr();<br>
+  do<br>
+   {<br>
+    printf("\n1.Push");<br>
+    printf("\n2.Pop");<br>
+    printf("\n3.Display");<br>
+    printf("\n4.Exit");<br>
+    printf("\nEnter your Choice:");<br>
+    scanf("%d",&choice);<br>
+    switch(choice)<br>
+     {<br>
+      case 1:push();<br>
+      break;<br>
+      case 2:pop();<br>
+      break;<br>
+      case 3:display();<br>
+      break;<br>
+      case 4:exit(0);<br>
+      break;<br>
+     }<br>
+   }while(choice!=4);<br>
+ }<br>
+void push()<br>
+ {<br>
+  int item;<br>
+  if(top==MAXSIZE-1)<br>
+   {<br>
+    printf("Stcak is full");<br>
+    getch();<br>
+    return;<br>
+   }<br>
+  else<br>
+   {<br>
+    printf("Enter the element to be inserted:");<br>
+    scanf("%d",&item);<br>
+    top=top+1;<br>
+    stack[top]=item;<br>
+   }<br>
+ }<br>
+int pop()<br>
+ {<br>
+  int item;<br>
+  if(top==-1)<br>
+   {<br>
+    printf("Stack is empty");<br>
+    getch();<br>
+    return;<br>
+   }<br>
+  else<br>
+   {<br>
+    item=stack[top];<br>
+    top=top-1;<br>
+   }<br>
+  return(item);<br>
+ }<br>
+void display()<br>
+ {<br>
+  int i;<br>
+  if(top==-1)<br>
+   {<br>
+    printf("Stack is empty");<br>
+    getch();<br>
+    return;<br>
+   }<br>
+  else<br>
+   {<br>
+    printf("\nThe elements are:");<br>
+    for(i=top;i>=0;i--)<br>
+     {<br>
+      printf("\n%d",stack[i]);<br>
+     }<br>
+   }<br>
+ }<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#4682B4;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h3>/*Program to check number and add them*/</h3></center>
+</div>
+<center>
+<div class="border_box">
+ #include< stdio.h ><br>
+#include< conio.h ><br>
+void main()<br>
+ {<br>
+  int n,i,eve=0,odd=0;<br>
+  clrscr();<br>
+  printf("Enter the Limit:");<br>
+  scanf("%d",&n);<br>
+  for(i=0;i<=n;i++)<br>
+  {<br>
+  if(i%2==0)<br>
+   {<br>
+    eve=eve+n;<br>
+   }<br>
+  else<br>
+   {<br>
+    odd=odd+n;<br>
+   }<br>
+  }<br>
+  printf("Sum of Even Numbers is: %d",eve);<br>
+  printf("\nSum of Odd Numbers is: %d",odd);<br>
+  getch();<br>
+ }<br>
+<h3><B>Output</h3></b>
+Enter the Limit: 10<br>
+Sum of Even Numbers is: 30<br>
+Sum of Odd Numbers is: 25<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

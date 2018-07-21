@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<TITLE>Employee</TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#4682B4;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h3>/*Program to create employee structure which will have name id and salary*/</h3></center>
+</div>
+<center>
+<div class="border_box">
+ #include< stdio.h ><br>
+#include< conio.h ><br>
+void main()<br>
+ {<br>
+ struct emp<br>
+  {<br>
+    char n[4];<br>
+    int id;<br>
+    int sal;<br>
+  };<br>
+ struct emp b;<br>
+ int i;<br>
+ clrscr();<br>
+ printf("\nEnter details of employee:");<br>
+ printf("\nEnter the name:");<br>
+ for(i=0;i<=3;i++)<br>
+  {<br>
+   scanf("%c",&b.n[i]);<br>
+  }<br>
+ printf("\nEnter id and salary:");<br>
+ scanf("%d%d",&b.id,&b.sal);<br>
+ printf("\nDetails of the employee are:");<br>
+printf("Name is:");<br>
+ for(i=0;i<=3;i++)<br>
+  {<br>
+   printf("%c",b.n[i]);<br>
+  }<br>
+ printf("\nID is    : %d",b.id);<br>
+ printf("\nSalary is: %d",b.sal);<br>
+ getch();<br>
+}<br>
+<h3><B>Output</b></h3>
+Enter details of Employee:<br>
+Enter the name: PQRS<br>
+Enter id and salary:1234 25000 <br>
+Details of employee are:<br>
+Name:     PQRS<br>
+ID is      : 1234<br>
+Salary is : 25000<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

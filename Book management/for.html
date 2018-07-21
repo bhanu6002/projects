@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<TITLE>for loop</TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#ADD8E6;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h1>for Loop</h1></center>
+</div>
+<center>
+<div class="border_box">
+<h3>Syntax</h3>
+<p>for(initialization statement; test expression; update statement) {
+       code/s to be executed; 
+}</p>
+How for loop works in C programming?<br>
+<p>The initialization statement is executed only once at the beginning of the for loop. Then the test expression is checked by the program. If the test expression is false, for loop is terminated. But if test expression is true then the code/s inside body of for loop is executed and then update expression is updated. This process repeats until test expression is false.</p>
+
+<h3>Example:</h3>
+Write a program to find the sum of first n natural numbers where n is entered by user. Note: 1,2,3... are called natural numbers.<br><br>
+
+#include <stdio.h> <br>
+int main( )<br>
+{<br>
+    int n, count, sum=0;<br>
+    printf("Enter the value of n.\n");<br>
+    scanf("%d",&n);<br>
+    for(count=1;count<=n;++count)  //for loop terminates if count>n<br>
+    {<br>
+        sum+=count;    /* this statement is equivalent to sum=sum+count */<br>
+    }<br>
+    printf("Sum=%d",sum);<br>
+    return 0;<br>
+}<br>
+
+<h3>Output</h3>
+
+Enter the value of n.<br>
+19<br>
+Sum=190<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,107 @@
+
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#4682B4;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h3>/*Stack using pointers*/</h3></center>
+</div>
+<center>
+<div class="border_box">
+#include< conio.h ><br>
+#include< stdio.h ><br>
+#include< stdlib.h ><br>
+void push(int*, int);<br>
+void display(int*,int);<br>
+int *ptr;<br>
+int item,top;<br>
+void main()<br>
+ {<br>
+  int i,ch,n;<br>
+  clrscr();<br>
+  printf("Enter the size of array:");<br>
+  scanf("%d",&n);<br>
+  ptr=(int*)malloc(n*sizeof(int));<br>
+  if(ptr==0)<br>
+   {<br>
+    printf("Size not available");<br>
+    getch();<br>
+    return;<br>
+   }<br>
+  else<br>
+   {<br>
+    do<br>
+     {<br>
+      printf("\n1.Push\n2.Pop\n3.Display\n4.Exit\nEnter your choice:");<br>
+      scanf("%d",&ch);<br>
+      switch(ch)<br>
+       {<br>
+	case 1:push(ptr,n);<br>
+	break;<br>
+       	case 2:pop();<br>
+       	break;<br>
+	case 3:display(ptr,n);<br>
+	break;<br>
+       	case 4:exit(0);<br>
+	break;<br>
+       }<br>
+     }while(ch!=4);<br>
+   }<br>
+  getch();<br>
+ }<br>
+void push(int *ptr,int n)<br>
+ {<br>
+  int i,top;<br>
+  if(top==-1)<br>
+   {<br>
+   printf("Stack is full");<br>
+   getch();<br>
+   return;<br>
+   }<br>
+  else<br>
+   {<br>
+     printf("Enter elements:");<br>
+     for(i=0;i<n;i++)<br>
+      {<br>
+       scanf("%d",(ptr+i));<br>
+       top=top+1;<br>
+       *(ptr+top)=ptr;<br>
+      }<br>
+   }<br>
+ }<br>
+void display(int*ptr,int top)<br>
+ {<br>
+  int i;<br>
+  if(top==-1)<br>
+   {<br>
+    printf("Stack is empty");<br>
+   }<br>
+  else<br>
+   {<br>
+   printf("\nThe elements are:");<br>
+   for(i=top;i>0;i--)<br>
+    {<br>
+     printf("\n%d",*(ptr+i));<br>
+    }<br>
+   }<br>
+ }<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

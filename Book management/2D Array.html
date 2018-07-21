@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<TITLE>Two D Array</TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#ADD8E6;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h1>Two-D Array</h1></center>
+</div>
+<center>
+<div class="border_box">
+<p>The simplest form of the multidimensional array is the two-dimensional array. A two-dimensional array is, in essence, a list of one-dimensional arrays. To declare a two-dimensional integer array of size x,y you would write something as follows:</p>
+
+type arrayName [ x ][ y ];<br>
+<p>Where type can be any valid C data type and arrayName will be a valid C identifier. A two-dimensional array can be think as a table which will have x number of rows and y number of columns.</p>
+
+<p>Thus, every element in array a is identified by an element name of the form a[ i ][ j ], where a is the name of the array, and i and j are the subscripts that uniquely identify each element in a.</p>
+<p>Multidimensional arrays may be initialized by specifying bracketed values for each row. Following is an array with 3 rows and each row has 4 columns.</p>
+
+int a[3][4] = {  <br>
+ {0, 1, 2, 3} ,   /*  initializers for row indexed by 0 */<br>
+ {4, 5, 6, 7} ,   /*  initializers for row indexed by 1 */<br>
+ {8, 9, 10, 11}   /*  initializers for row indexed by 2 */<br>
+};<br>
+The nested braces, which indicate the intended row, are optional. The following initialization is equivalent to previous example:<br>
+
+int a[3][4] = {0,1,2,3,4,5,6,7,8,9,10,11};<br>
+An element in 2-dimensional array is accessed by using the subscripts, i.e., row index and column index of the array. For example:<br>
+
+int val = a[2][3];:<br>
+The above statement will take 4th element from the 3rd row of the array. You can verify it in the above diagram. Let us check below program where we have used nested loop to handle a two dimensional array::<br>
+
+#include <stdio.h>:<br>
+ 
+int main ():<br>
+{:<br>
+   /* an array with 5 rows and 2 columns*/:<br>
+   int a[5][2] = { {0,0}, {1,2}, {2,4}, {3,6},{4,8}};:<br>
+   int i, j;:<br>
+ 
+   /* output each array element's value */:<br>
+   for ( i = 0; i < 5; i++ ):<br>
+   {:<br>
+      for ( j = 0; j < 2; j++ ):<br>
+      {:<br>
+         printf("a[%d][%d] = %d\n", i,j, a[i][j] );:<br>
+      }:<br>
+   }:<br>
+   return 0;:<br>
+}:<br>
+When the above code is compiled and executed, it produces the following result::<br>
+
+a[0][0]: 0:<br>
+a[0][1]: 0:<br>
+a[1][0]: 1:<br>
+a[1][1]: 2:<br>
+a[2][0]: 2:<br>
+a[2][1]: 4:<br>
+a[3][0]: 3:<br>
+a[3][1]: 6:<br>
+a[4][0]: 4:<br>
+a[4][1]: 8:<br>
+As explained above, you can have arrays with any number of dimensions, although it is likely that most of the arrays you create will be of one or two dimensions.:<br>
+<a href="home page.html">Home</a>
+</center>
+</div>
+</BODY>
+</HTML>

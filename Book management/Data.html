@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<TITLE>Data</TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#ADD8E6;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h1>Data types</h1></center>
+</div>
+<img src="Variables1.jpg" align="right">
+<div class="border_box">
+<p>In Standard C there are four basic data types. They are int, char, float, and double.</p>
+<p>We will briefly describe them here, then go into more detail in C Programming/Types.</p>
+
+<h2>The <b><u>int</b></u> type</h2>
+<p>The int type stores integers in the form of "whole numbers". An integer is typically the size of one machine word, which on most modern home PCs is 32 bits (4 octets). Examples of literals are whole numbers (integers) such as 1,2,3, 10, 100... When int is 32 bits (4 octets), it can store any whole number (integer) between -2147483648 and 2147483647. A 32 bit word (number) has the possibility of representing any one number out of 4294967296 possibilities (2 to the power of 32).</p>
+<p>If you want to declare a new int variable, use the int keyword.</p>
+<p> For example: int numberOfStudents, i, j=5;</p>
+<p>In this declaration we declare 3 variables, numberOfStudents, i and j, j here is assigned the literal 5.</p><br>
+
+<h2>The <b><u>char</b></u> type</h2>
+<p>The char type is capable of holding any member of the execution character set. It stores the same kind of data as an int (i.e. integers), but typically has a size of one byte. The size of a byte is specified by the macro CHAR_BIT which specifies the number of bits in a char (byte). In standard C it never can be less than 8 bits. A variable of type char is most often used to store character data, hence its name. Most implementations use the ASCII character set as the execution character set, but it's best not to know or care about that unless the actual values are important.</p>
+<p>Examples of character literals are 'a', 'b', '1', etc., as well as some special characters such as '\0' (the null character) and '\n' (newline, recall "Hello,World").</p>
+ <p>Note that the char value must be enclosed within single quotations.</p>
+
+<p>When we initialize a character variable, we can do it two ways. One is preferred, the other way is bad programming practice.
+
+The first way is to write
+
+char letter1 = 'a';
+This is good programming practice in that it allows a person reading your code to understand that letter1 is being initialized with the letter 'a' to start off with.
+</p>
+<p>The second way, which should not be used when you are coding letter characters, is to write
+
+char letter2 = 97; /* in ASCII, 97 = 'a' */
+This is considered by some to be extremely bad practice, if we are using it to store a character, not a small number, in that if someone reads your code, most readers are forced to look up what character corresponds with the number 97 in the encoding scheme. In the end, letter1 and letter2 store both the same thing – the letter 'a', but the first method is clearer, easier to debug, and much more straightforward.</p>
+
+<p>One important thing to mention is that characters for numerals are represented differently from their corresponding number, i.e. '1' is not equal to 1. In short, any single entry that is enclosed within 'single quotes'.</p>
+
+<p>There is one more kind of literal that needs to be explained in connection with chars: the string literal. A string is a series of characters, usually intended to be displayed. They are surrounded by double quotations (" ", not ' ').</p>
+<p> An example of a string literal is the "Hello, World!\n" in the "Hello, World" example.
+
+The string literal is assigned to a character array, arrays are described later. Example:
+
+const char MY_CONSTANT_PEDANTIC_ITCH[] = "learn the usage context.\n";
+printf("Square brackets after a variable name means it is a pointer to a string of memory blocks the size of the type of the array element.\n");</p>
+<h2>The <b><u>float</b></u> type</h2>
+<p>float is short for floating point. It stores real numbers also, but is only one machine word in size. Therefore, it is used when less precision than a double provides is required. float literals must be suffixed with F or f, otherwise they will be interpreted as doubles. Examples are: 3.1415926f, 4.0f, 6.022e+23f. float variables can be declared using the float keyword.</p>
+
+<h2>The <b><u>double</b></u> type</h2>
+<p>The double and float types are very similar. The float type allows you to store single-precision floating point numbers, while the double keyword allows you to store double-precision floating point numbers – real numbers, in other words, both integer and non-integer values. Its size is typically two machine words, or 8 bytes on most machines. Examples of double literals are 3.1415926535897932, 4.0, 6.022e+23 (scientific notation). If you use 4 instead of 4.0, the 4 will be interpreted as an int.</p>
+
+<p>The distinction between floats and doubles was made because of the differing sizes of the two types. When C was first used, space was at a minimum and so the judicious use of a float instead of a double saved some memory. Nowadays, with memory more freely available, you do not really need to conserve memory like this – it may be better to use doubles consistently. Indeed, some C implementations use doubles instead of floats when you declare a float variable.</p>
+
+<p>If you want to use a double variable, use the double keyword.</p>
+<a href="home page.html" target="_parent">Home</a>
+
+
+</div>
+</BODY>
+</HTML>

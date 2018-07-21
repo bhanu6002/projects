@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#ADD8E6;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h1>Semantics</h1></center>
+</div>
+<center>
+<div class="border_box">
+ <p>The semantics of operators particularly depends on value, evaluation strategy, and argument passing mode (such as boolean short-circuiting). Simply, an expression involving an operator is evaluated in some way, and the resulting value may be just a value (an r-value), or may be an object allowing assignment (an l-value).</p>
+
+<p>In simple cases this is identical to usual function calls; for example, addition x + y is generally equivalent to a function call add(x, y) and less-than comparison x < y to lt(x, y), meaning that the arguments are evaluated in their usual way, then some function is evaluated and the result is returned as a value. However, the semantics can be significantly different. For example, in assignment a = b the target a is not evaluated, but instead its location (address) is used to store the value of b – corresponding to call-by-reference semantics. Further, an assignment may be a statement (no value), or may be an expression (value), with the value itself either an r-value (just a value) or an l-value (able to be assigned to). As another example, the scope resolution operator :: and the element access operator . (as in Foo::Bar or a.b) operate not on values, but on names, essentially call-by-name semantics, and their value is a name.</p>
+
+<p>Use of l-values as values of operator expressions is particularly notable in array indexing and unary increment and decrement operators. In C, for instance, the following statements are legal and well-defined, and depend on the fact that these operators return an l-value:
+
+y = ++x++;
+x = ++a[i];</p>
+
+<p>An important use is when a left-associative binary operator modifies its left argument (or produces a side effect) and then evaluates to that argument as an l-value.[a] This allows a sequence of operators all affecting the original argument, allowing a fluent interface, similar to method cascading. A common example is the << operator in the C++ iostream library, which allows fluent output, as follows:
+
+cout << "Hello" << " " << "world!" << endl;</p>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

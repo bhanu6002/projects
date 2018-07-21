@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<TITLE>Grades</TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#4682B4;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h3>/*Program to find Grades*/</h3></center>
+</div>
+<center>
+<div class="border_box">
+#include< stdio.h ><br>
+#include< conio.h ><br>
+void main()<br>
+ {<br>
+   float per;<br>
+   clrscr();<br>
+   printf("Enter your Percentage:");<br>
+   scanf("%f",&per);<br>
+   if(per>=66)<br>
+    {<br>
+     printf("Distinction");<br>
+    }<br>
+   else<br>
+    {<br>
+     if(per<66 && per>=60)<br>
+      {<br>
+       printf("First Class");<br>
+      }<br>
+     else<br>
+      {<br>
+       if(per<60 && per>=50)<br>
+	{<br>
+	  printf("Second Class");<br>
+	}<br>
+       else<br>
+	{<br>
+	 if(per<50 && per>=40)<br>
+	  {<br>
+	   printf("Third Class");<br>
+	  }<br>
+	 else<br>
+	  {<br>
+	   printf("Fail");<br>
+	  }<br>
+	}<br>
+      }<br>
+   }<br>
+      getch();<br>
+ }<br>
+<h3><B>Output</h3></b>
+Enter your Percentage: 69.07<br>
+Distinction<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

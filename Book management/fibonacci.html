@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<TITLE>Fibonacci</TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#4682B4;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h3>/*Program to Print Fibonacci Series*/</h3></center>
+</div>
+<center>
+<div class="border_box">
+ #include<stdio.h ><br>
+#include<conio.h ><br>
+void main()<br>
+ {<br>
+  int a=0,b=1,n,c=0,i;<br>
+  clrscr();<br>
+  printf("Enter the number of terms to be printed:");<br>
+  scanf("%d",&n);<br>
+  printf("%d %d ",a,b);<br>
+  for(i=1;i<=(n-2);i++)<br>
+   {<br>
+    c=a+b;<br>
+    a=b;<br>
+    b=c;<br>
+    printf("%d ",c);<br>
+   }<br>
+  getch();<br>
+ }<br>
+<h3><b>Output</b></h3>
+Enter the number of terms to be printed:5<br>
+0 1 1 2 3<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

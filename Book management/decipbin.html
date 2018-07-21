@@ -1,0 +1,96 @@
+
+
+<HTML>
+<HEAD>
+<TITLE>Decimal IP to Binary IP</TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#4682B4;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h3>/*Program to Convert Decimal IP address into Binary IP address*/</h3></center>
+</div>
+<center>
+<div class="border_box">
+#include< conio.h ><br>
+#include< stdio.h ><br>
+void main()<br>
+ {<br>
+  int a,b,c,d,i;<br>
+  int rem[8],bin;<br>
+  clrscr();<br>
+  printf("Enter the IP address:");<br>
+  scanf("%d%d%d%d",&a,&b,&c,&d);<br>
+  printf("Your IP address is %d.%d.%d.%d",a,b,c,d);<br>
+  if((a>=0 && a<=255) && (b>=0 && b<=255 ) && (c>=0 && c<=255) && (d>=0 && d<=255))<br>
+   {<br>
+    printf("\nYour IP address is Valid");<br>
+   }<br>
+  else<br>
+   {<br>
+    printf("\nYour IP address is Invalid");<br>
+   }<br>
+  for(i=7;i>=0;i--)<br>
+   {<br>
+    rem[i]=a%2;<br>
+    a=a/2;<br>
+   }<br>
+  printf("\n");<br>
+  for(i=0;i<8;i++)<br>
+   {<br>
+    printf("%d",rem[i]);<br>
+   }<br>
+  for(i=7;i>=0;i--)<br>
+   {<br>
+    rem[i]=b%2;<br>
+    b=b/2;<br>
+   }<br>
+  printf(" ");<br>
+  for(i=0;i<8;i++)<br>
+   {<br>
+    printf("%d",rem[i]);<br>
+   }<br>
+  for(i=7;i>=0;i--)<br>
+   {<br>
+    rem[i]=c%2;<br>
+    c=c/2;<br>
+   }<br>
+  printf(" ");<br>
+  for(i=0;i<8;i++)<br>
+   {<br>
+    printf("%d",rem[i]);<br>
+   }<br>
+  for(i=7;i>=0;i--)<br>
+   {<br>
+    rem[i]=d%2;<br>
+    d=d/2;<br>
+   }<br>
+  printf(" ");<br>
+  for(i=0;i<8;i++)<br>
+   {<br>
+    printf("%d",rem[i]);<br>
+   }<br>
+  getch();<br>
+ }<br>
+<h3><b>Output</h3></b>
+Enter the IP address: 192 168 125 201<br><
+Your IP address is 192.168.125.201<br>
+Your IP address is Valid<br>
+11000000 10101000 01111101 11001001<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<TITLE>Factorial</TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#4682B4;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h3>/*Program to find Factorial of number*/</h3></center>
+</div>
+<center>
+<div class="border_box">
+ #include<stdio.h ><br>
+#include<conio.h ><br>
+void main()<br>
+ {<br>
+  int n,i;<br>
+  long int fact=1;<br>
+  clrscr();<br>
+  printf("Enter the number to find its factorial:");<br>
+  scanf("%d",&n);<br>
+  for(i=1;i<=n;i++)<br>
+   {<br>
+    fact=fact*i;<br>
+   }<br>
+  printf("Its Factorial is %ld",fact);<br>
+  getch();<br>
+ }<br>
+<h3><b>Output</h3></b>
+Enter the number to find its factorial: 6<br>
+Its factorial is 720<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

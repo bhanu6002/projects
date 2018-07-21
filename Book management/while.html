@@ -1,0 +1,59 @@
+
+
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#ADD8E6;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h1>while loop</h1></center>
+</div>
+<center>
+<div class="border_box">
+<h3>Syntax</h3>
+while (test expression)<br>
+ {<br>
+     statement/s to be executed. <br> 
+}<br>
+<p>The while loop checks whether the  test expression is true or not. If it is true, code/s inside the body of while loop is executed,that is, code/s inside the braces { } are executed. Then again the test expression is checked whether test expression is true or not. This process continues until the test expression becomes false.</p>
+
+<h3>Example</h3>
+Write a C program to find the factorial of a number, where the number is entered by user. (Hints: factorial of n = 1*2*3*...*n<br>
+/*C program to demonstrate the working of while loop*/<br>
+#include <stdio.h> <br>
+     int main( )<br>{<br>
+     int number,factorial;<br>
+     printf("Enter a number.\n");,br>
+     scanf("%d",&number);<br>
+     factorial=1;<br>
+     while (number>0)<br>{<br>      /* while loop continues util test condition number>0 is true */
+           factorial=factorial*number;<br>
+           --number;<br>
+}<br>
+printf("Factorial=%d",factorial);<br>
+return 0;<br>
+}<br>
+<h3>Output:</h3>
+
+Enter a number.<br>
+5<br>
+Factorial=120<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>

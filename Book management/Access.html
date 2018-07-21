@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<TITLE>AccessS</TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#ADD8E6;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h1>Accessing Array Element</h1></center>
+</div>
+<center>
+<div class="border_box">
+<P>An element is accessed by indexing the array name. This is done by placing the index of the element within square brackets after the name of the array. For example:</p>
+
+double salary = balance[9];<br>
+<p>The above statement will take 10th element from the array and assign the value to salary variable. Following is an example which will use all the above mentioned three concepts viz. declaration, assignment and accessing arrays:</p>
+
+#include <stdio.h><br>
+ 
+int main ()<br>
+{<br>
+   int n[ 10 ]; /* n is an array of 10 integers */<br>
+   int i,j;<br>
+ 
+   /* initialize elements of array n to 0 */        <br> 
+   for ( i = 0; i < 10; i++ )<br>
+   {<br>
+      n[ i ] = i + 100; /* set element at location i to i + 100 */<br>
+   }<br>
+   
+   /* output each array element's value */<br>
+   for (j = 0; j < 10; j++ )<br>
+   {<br>
+      printf("Element[%d] = %d\n", j, n[j] );<br>
+   }<br>
+ 
+   return 0;<br>
+}<br>
+When the above code is compiled and executed, it produces the following result:<br>
+
+Element[0] = 100<br>
+Element[1] = 101<br>
+Element[2] = 102<br>
+Element[3] = 103<br>
+Element[4] = 104<br>
+Element[5] = 105<br>
+Element[6] = 106<br>
+Element[7] = 107<br>
+Element[8] = 108<br>
+Element[9] = 109<br>
+<a href="home page.html " target="_parent">Home</a>
+</center>
+</div>
+</BODY>
+</HTML>

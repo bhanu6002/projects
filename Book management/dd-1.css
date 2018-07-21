@@ -1,0 +1,97 @@
+@ css document  
+#nav-global { 
+ width:100%;
+  margin: 0; 
+padding:0;
+  list-style: none; 
+  font-family: Helvetica, Arial, sans-serif; 
+  font-size: 16px; 
+
+}
+#nav-global li { 
+  position: relative; 
+  display: block; 
+  float:left; 
+  padding-bottom: 9px; 
+  text-transform: uppercase; 
+
+}
+#nav-global li a { 
+  padding: 12px 12px 9px 12px; 
+  border-left:  solid #6e986d; 
+  color: #fff; 
+  background: #ffcc00; 
+
+}
+#nav-global li:hover a { 
+  color: #ff8080; 
+  background: #fff;
+ }
+#nav-global li ul { 
+  position: absolute; 
+  top: 100%; 
+  display: none; 
+  margin: 0; 
+  padding: 0; 
+  border: 1px solid #6e986d; 
+  border-top: 0; 
+
+}
+#nav-global li ul li { 
+  display: block; 
+  float: none; 
+  width: 200px; 
+  padding: 0; 
+  text-transform: none; 
+
+}
+#nav-global li ul li a,
+#nav-global li:hover ul { 
+  display: block; 
+  
+
+}
+#cont {
+  background-color:#ffcc00;
+  text-align:left;
+  width: 100%;
+  height: 50px;
+padding-top:10px;
+padding-bottom:1px;
+}
+
+#footer{
+  margin-bottom: -150px;
+  clear: both;
+}
+
+
+
+
+.lookWrap{
+  position: relative; 
+  background-color:#ff3333;
+  float: left;
+  width: 100%;
+}
+
+#look{
+  margin: auto;
+  width: 700px;
+}
+
+.section{
+   overflow: hidden;
+  float:left;
+  display: inline;
+  width: 160px;
+  margin: 0 15px 15px 0;
+  font: 16pt verdana;
+  line-height: 1.6em;
+}
+
+.section a{
+  display: block;
+color:black;
+}
+

@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<link rel="stylesheet" type="text/css" href="2nd page.css" media="screen" />
+<style>
+#header
+ {
+   background-color:#4682B4;
+   color:black;
+   font-family:lucida calligraphy;
+   font-size:18px;
+   padding:5px;
+   align:centre;
+   height:100px;
+ }
+</style>
+</HEAD>
+<BODY background="bg5.jpg">
+<div id="header">
+<center><h3>/*Program to find days in a month*/</h3></center>
+</div>
+<center>
+<div class="border_box">
+#include< stdio.h ><br>
+#include< conio.h ><br>
+void main()<br>
+ {<br>
+  int date,mnth,yr;<br>
+  clrscr();<br>
+  printf("Enter the following details-");<br>
+  printf("\nDate:");<br>
+  scanf("%d",&date);<br>
+  printf("Month:");<br>
+  scanf("%d",&mnth);<br>
+  printf("Year:");<br>
+  scanf("%d",&yr);<br>
+  printf("\nThe date is %d/%d/%d",date,mnth,yr);<br>
+  if(yr%4==0)<br>
+   {<br>
+    switch(mnth)<br>
+     {<br>
+      case 1:<br>
+      case 3:<br>
+      case 5:<br>
+      case 7:<br>
+      case 8:<br>
+      case 10:<br>
+      case 12:<br>
+	   printf("\nThis month has 31 days");<br>
+	   break;<br>
+      case 4:<br>
+      case 6:<br>
+      case 9:<br>
+      case 11:<br>
+	   printf("\nThis month has 30 days");<br>
+	   break;<br>
+      case 2:<br>
+	   printf("\nThis month has 29 days");<br>
+	   break;<br>
+      default:<br>
+	   printf("Please enter correct month");<br>
+	   break;<br>
+     }<br>
+   }<br>
+   else<br>
+    {<br>
+     switch(mnth)<br>
+      {<br>
+       case 1:<br>
+       case 3:<br>
+       case 5:<br>
+       case 7:<br>
+       case 8:<br>
+       case 10:<br>
+       case 12:<br>
+	    printf("\nThis month has 31 days");<br>
+	    break;<br>
+       case 4:<br>
+       case 6:<br>
+       case 9:<br>
+       case 11:<br>
+	    printf("\nThis month has 30 days");<br>
+	    break;<br>
+       case 2:<br>
+	    printf("\nThis month has 28 days");<br>
+	    break;<br>
+       default:<br>
+	    printf("\nEnter Valid month");<br>
+	    break;<br>
+       }<br>
+     }<br>
+    getch();<br>
+  }<br>
+<h3><B>Output</b></h3>
+Enter the following details-<br>
+Date:01<br>
+Month:05<br>
+Year:1997<br>
+The date is 01/05/1997<br>
+This month has 31 days<br>
+<a href="home page.html" target="_parent">Home</a>
+
+</center>
+</div>
+</BODY>
+</HTML>
